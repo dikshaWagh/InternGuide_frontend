@@ -44,8 +44,6 @@ const SignUpPage = () => {
       dob: formData.dob,
       gender: formData.gender,
       education_level: formData.education_level,
-      title:formData.title,
-      domain:formData.domain,
       region: formData.region,
       location: formData.location ? [formData.location] : [],
       skills: formData.skills ? formData.skills.split(",").map((s) => s.trim()) : [],
