@@ -1,0 +1,165 @@
+/* ================================
+   FOOTER – SAME THEME AS HOW IT WORKS
+================================ */
+.footer {
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.98),
+    rgba(10, 0, 0, 0.95)
+  );
+  padding: 120px 32px 0;
+  border-top: 1px solid rgba(255, 0, 0, 0.25);
+}
+
+/* ================================
+   Container
+================================ */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.3fr 2.7fr;
+  gap: 80px;
+}
+
+/* ================================
+   LEFT BLOCK (Brand)
+================================ */
+.footer-left {
+  background: rgba(10, 10, 14, 0.85);
+  border: 1px solid rgba(255, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
+  padding: 36px;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 0, 0, 0.08),
+    0 0 30px rgba(255, 0, 0, 0.15);
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.logo-box {
+  width: 56px;
+  height: 56px;
+  border: 2px solid #ff1a1a;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 0 18px rgba(255, 0, 0, 0.7);
+}
+
+.logo-icon {
+  color: #ff1a1a;
+  width: 26px;
+  height: 26px;
+}
+
+.footer-logo h3 {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-logo p {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-desc {
+  font-size: 14px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* ================================
+   LINKS GRID
+================================ */
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+}
+
+.footer-links > div {
+  background: rgba(10, 10, 14, 0.85);
+  border: 1px solid rgba(255, 0, 0, 0.25);
+  padding: 32px;
+  backdrop-filter: blur(12px);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 0, 0, 0.08),
+    0 0 30px rgba(255, 0, 0, 0.15);
+}
+
+.footer-links h4 {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ff1a1a;
+  margin-bottom: 20px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 14px;
+}
+
+.footer-links a {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.footer-links a:hover {
+  color: #ff1a1a;
+  text-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+/* ================================
+   BOTTOM BAR
+================================ */
+.footer-bottom {
+  margin-top: 80px;
+  padding: 24px 0;
+  text-align: center;
+  border-top: 1px solid rgba(255, 0, 0, 0.25);
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding: 80px 20px 0;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+}

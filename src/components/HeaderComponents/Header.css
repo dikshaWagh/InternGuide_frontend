@@ -1,0 +1,163 @@
+/* ===============================
+   HEADER BASE
+================================ */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 72px;
+  z-index: 1000;
+  background: rgba(5, 5, 8, 0.75);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 0, 0, 0.15);
+}
+
+/* ===============================
+   LAYOUT
+================================ */
+.header-container {
+  max-width: 1400px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ===============================
+   LEFT / LOGO
+================================ */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo-box {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #ff1a1a;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 0 12px rgba(255, 0, 0, 0.6);
+}
+
+.logo-icon {
+  color: #ff1a1a;
+}
+
+.title {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 1.2px;
+}
+
+/* ===============================
+   NAV LINKS
+================================ */
+.nav {
+  display: flex;
+  gap: 32px;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+  position: relative;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background: #ff1a1a;
+  transition: width 0.3s ease;
+}
+
+.nav a:hover {
+  color: #ff1a1a;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* ===============================
+   RIGHT BUTTONS
+================================ */
+.header-right {
+  display: flex;
+  gap: 14px;
+}
+
+.profile-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+
+  background: transparent;
+  border: 1px solid #ff1a1a;
+  color: #ff1a1a;
+
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.profile-btn:hover {
+  background: rgba(255, 0, 0, 0.15);
+  box-shadow: 0 0 12px rgba(255, 0, 0, 0.7);
+}
+
+.btn-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* ===============================
+   MOBILE BOTTOM NAV
+================================ */
+.bottom-nav {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav,
+  .header-right {
+    display: none;
+  }
+
+  .bottom-nav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(5, 5, 8, 0.95);
+    border-top: 1px solid rgba(255, 0, 0, 0.2);
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+
+  .bottom-nav a {
+    color: #ff1a1a;
+  }
+}
