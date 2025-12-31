@@ -87,7 +87,7 @@ const SignUpPage = () => {
     <div className="login-container signup-container">
       <div className="login-form">
         <div className="form-box">
-          <h2>Join PM Internship Scheme!</h2>
+          <h2>Join InternGuide</h2>
           <p className="sub-text">Create your account to explore opportunities</p>
 
           {error && <p className="error-text">{error}</p>}

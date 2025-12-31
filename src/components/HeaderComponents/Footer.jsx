@@ -14,7 +14,7 @@ const Footer = () => {
               <Building className="logo-icon" />
             </div>
             <div>
-              <h3>PM Internship Scheme</h3>
+              <h3>InternGuide</h3>
               <p>Smart Matching System</p>
             </div>
           </div>

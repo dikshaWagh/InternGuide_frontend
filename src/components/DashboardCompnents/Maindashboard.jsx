@@ -177,7 +177,7 @@ const MainDashboard = () => {
         {/* Main Content */}
         <div className="main-grid">
           <div className="matches">
-            <Card>
+            <Card className="dashboard-card">
               <CardHeader>
                 <div className="matches-header">
                   <CardTitle>Top Matches for You</CardTitle>
@@ -256,7 +256,7 @@ const MainDashboard = () => {
 
           {/* Side Panel */}
           <div className="side-panel">
-            <Card>
+            <Card className="dashboard-card">
               <CardHeader>
                 <CardTitle>Matching Criteria</CardTitle>
               </CardHeader>

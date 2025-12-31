@@ -9,7 +9,7 @@ const Progress = ({ value = 0 }) => {
         className="h-full transition-all duration-300 ease-in-out"
         style={{
           width: `${value}%`,
-          background: "#0560e1", 
+          background: "#e10505ff", 
         }}
       />
     </div>

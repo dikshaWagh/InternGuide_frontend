@@ -163,3 +163,28 @@
     grid-template-columns: 1fr;
   }
 }
+@media (max-width: 768px) {
+  /* Hide header items */
+  .nav,
+  .header-right {
+    display: none;
+  }
+
+  /* Show bottom nav */
+  .bottom-nav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(5, 5, 8, 0.95);
+    border-top: 1px solid rgba(255, 0, 0, 0.2);
+    justify-content: space-around;
+    padding: 10px 0;
+    z-index: 999;
+  }
+
+  .bottom-nav a {
+    color: #ff1a1a;
+  }
+}
