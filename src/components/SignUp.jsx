@@ -66,7 +66,7 @@ const SignUpPage = () => {
       if (!response.ok) {
         setError(data.detail || "Signup failed. Please try again.");
       } else {
-        // ✅ Store in localStorage
+
         localStorage.setItem("token", data.access_token);
         localStorage.setItem("user", JSON.stringify(data.user));
 
@@ -127,8 +127,7 @@ const SignUpPage = () => {
             <input
               type="text"
               name="title"
-              // value={formData.skills}
-              // onChange={handleChange}
+
               placeholder="Web Development"
             />
 
