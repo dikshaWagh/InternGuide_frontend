@@ -27,10 +27,14 @@ const LoginPage = () => {
     }
 
     try {
+      const params = new URLSearchParams();
+      params.append('username', email);
+      params.append('password', password);
+
       const response = await fetch("http://127.0.0.1:8000/auth/login", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, password }),
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: params.toString(),
       });
 
       const data = await response.json();
