@@ -3,6 +3,7 @@ import "../App.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../AuthContext.jsx"; 
+import API_BASE_URL from "../config.js";
 
 
 const LoginPage = () => {
@@ -31,7 +32,7 @@ const LoginPage = () => {
       params.append('username', email);
       params.append('password', password);
 
-      const response = await fetch("http://127.0.0.1:8000/auth/login", {
+      const response = await fetch(`${API_BASE_URL}/auth/login`, {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: params.toString(),

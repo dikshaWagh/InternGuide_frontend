@@ -3,6 +3,7 @@ import "../App.css";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthContext.jsx"; 
 import { useContext } from "react";
+import API_BASE_URL from "../config.js";
 
 const SignUpPage = () => {
   const [formData, setFormData] = useState({
@@ -55,7 +56,7 @@ const SignUpPage = () => {
     };
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/auth/signup", {
+      const response = await fetch(`${API_BASE_URL}/auth/signup`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),

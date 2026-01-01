@@ -12,6 +12,7 @@ import {
   Search,
   Zap,
 } from "lucide-react";
+import API_BASE_URL from "../../config.js";
 import "./MainDashboard.css";
 import { AuthContext } from "../../AuthContext.jsx";
 import { useNavigate } from "react-router-dom";
@@ -30,7 +31,7 @@ const MainDashboard = () => {
       try {
         const token = localStorage.getItem("token");
 
-        const res = await fetch("http://127.0.0.1:8000/search/internships", {
+        const res = await fetch(`${API_BASE_URL}/search/internships`, {
           headers: {
             Authorization: `Bearer ${token}`,
             "Content-Type": "application/json",

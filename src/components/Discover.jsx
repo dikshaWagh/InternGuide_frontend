@@ -6,6 +6,7 @@ import Header from "./HeaderComponents/Header";
 import Footer from "./HeaderComponents/Footer";
 // import "./HeaderComponents/Footer.css";
 import { motion, AnimatePresence } from "framer-motion";
+import API_BASE_URL from "../config.js";
 
 
 const normalizeScore = (score) => Math.round(score * 100);
@@ -24,7 +25,7 @@ const Discover = () => {
     try {
       const token = localStorage.getItem("token"); 
 
-      const res = await fetch("http://127.0.0.1:8000/search/internships", {
+      const res = await fetch(`${API_BASE_URL}/search/internships`, {
         headers: {
           "Authorization": `Bearer ${token}`,
           "Content-Type": "application/json",
