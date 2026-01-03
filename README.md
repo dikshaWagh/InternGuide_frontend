@@ -1,12 +1,85 @@
-# React + Vite
+# 🧭 Internguide  
+### *Navigate Your Internship Journey — Stranger Things Edition*
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A Stranger Things–themed internship guidance platform designed to help students explore domains, track progress, and stay motivated — even in the Upside Down.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧪 Project Overview
 
-## Expanding the ESLint configuration
+**Internguide** is a full-stack web application built as part of an internship project.  
+It blends a **dark, immersive Stranger Things aesthetic** with a **practical internship guidance system**, focusing on usability, clarity, and user experience.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Key Features
+
+- 🔐 User Authentication (Signup & Login)
+- 👤 Personalized user profiles
+- 🧑‍💻 Domain & role exploration
+- 📊 Internship guidance workflow
+- 🎨 Stranger Things–inspired dark UI
+- ⚡ Fast and responsive interface
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **React.js**
+- **React Router**
+- **CSS (Custom Styling)**
+- **Vite**
+
+### Backend
+- **FastAPI**
+- **Python**
+- **PostgreSQL**
+- **JWT Authentication**
+
+---
+
+
+## 📁 Project Structure
+
+Internguide/
+├── frontend/              # React frontend (Vite)
+│   ├── src/
+│   │   ├── components/    # Reusable UI components
+│   │   ├── assets/        # Images, icons, static files
+│   │   ├── AuthContext.jsx# Authentication context
+│   │   ├── App.jsx        # Root component
+│   │   └── main.jsx       # Entry point
+│   └── vite.config.js     # Vite configuration
+│
+└── backend/               # FastAPI backend
+    ├── app/               # App initialization & configs
+    ├── models/            # Database models
+    ├── routes/            # API routes
+    └── main.py            # Backend entry point
+
+
+
+
+## 🚀 Getting Started
+
+Navigate to the frontend folder and run the development server:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+---
+
+## 🖼️ UI Preview
+<img width="1891" height="853" alt="image" src="https://github.com/user-attachments/assets/5d322eb6-b975-4e0c-9593-c927b78187c2" />
+
+
+
+
+
+
+
+
+
