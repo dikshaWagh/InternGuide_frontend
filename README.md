@@ -42,22 +42,20 @@ It blends a **dark, immersive Stranger Things aesthetic** with a **practical int
 
 ## 📁 Project Structure
 
-Internguide/
-├── frontend/              # React frontend (Vite)
-│   ├── src/
-│   │   ├── components/    # Reusable UI components
-│   │   ├── assets/        # Images, icons, static files
-│   │   ├── AuthContext.jsx# Authentication context
-│   │   ├── App.jsx        # Root component
-│   │   └── main.jsx       # Entry point
-│   └── vite.config.js     # Vite configuration
-│
-└── backend/               # FastAPI backend
-    ├── app/               # App initialization & configs
-    ├── models/            # Database models
-    ├── routes/            # API routes
-    └── main.py            # Backend entry point
+## 📁 Project Structure
 
+```text
+Internguide/
+├── frontend/                 # React frontend (Vite)
+│   ├── src/
+│   │   ├── components/       # Reusable UI components
+│   │   ├── assets/           # Images, icons, static files
+│   │   ├── AuthContext.jsx   # Authentication context
+│   │   ├── App.jsx           # Root component
+│   │   └── main.jsx          # Entry point
+│   └── vite.config.js        # Vite configuration
+
+```
 
 
 
